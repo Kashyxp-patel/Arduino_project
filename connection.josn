@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "author": "Arduino 128x64 OLED + Joystick Circuit",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 120, "left": 20, "attrs": {} },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": 367.94,
+      "left": 125.03,
+      "attrs": { "i2cAddress": "0x3c" }
+    },
+    { "type": "wokwi-servo", "id": "servo1", "top": 362.8, "left": -153.6, "attrs": {} },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -16.8,
+      "left": 11.4,
+      "attrs": { "volume": "0.1" }
+    },
+    { "type": "wokwi-led", "id": "ledG", "top": -20, "left": 140, "attrs": { "color": "green" } },
+    { "type": "wokwi-led", "id": "ledY", "top": -20, "left": 175, "attrs": { "color": "yellow" } },
+    { "type": "wokwi-led", "id": "ledR", "top": -20, "left": 210, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "rG",
+      "top": 55,
+      "left": 135,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rY",
+      "top": 55,
+      "left": 170,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "rR",
+      "top": 55,
+      "left": 205,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    },
+    { "type": "wokwi-analog-joystick", "id": "joy1", "top": 181.8, "left": -138.6, "attrs": {} }
+  ],
+  "connections": [
+    [ "oled1:GND", "uno:GND.2", "black", [ "v0" ] ],
+    [ "oled1:VCC", "uno:5V", "red", [ "v0" ] ],
+    [ "oled1:SCL", "uno:A5", "purple", [ "v0" ] ],
+    [ "oled1:SDA", "uno:A4", "blue", [ "v0" ] ],
+    [ "servo1:GND", "uno:GND.1", "black", [ "v0" ] ],
+    [ "servo1:V+", "uno:5V", "red", [ "v0" ] ],
+    [ "servo1:PWM", "uno:9", "orange", [ "v0" ] ],
+    [ "bz1:1", "uno:GND.1", "black", [ "v0" ] ],
+    [ "bz1:2", "uno:8", "cyan", [ "v0" ] ],
+    [ "uno:4", "rG:2", "green", [ "v0" ] ],
+    [ "rG:1", "ledG:A", "green", [ "v0" ] ],
+    [ "ledG:C", "uno:GND.1", "black", [ "v0" ] ],
+    [ "uno:5", "rY:2", "gold", [ "v0" ] ],
+    [ "rY:1", "ledY:A", "gold", [ "v0" ] ],
+    [ "ledY:C", "uno:GND.1", "black", [ "v0" ] ],
+    [ "uno:6", "rR:2", "red", [ "v0" ] ],
+    [ "rR:1", "ledR:A", "red", [ "v0" ] ],
+    [ "ledR:C", "uno:GND.1", "black", [ "v0" ] ],
+    [ "joy1:VCC", "uno:5V", "red", [ "v0" ] ],
+    [ "joy1:GND", "uno:GND.3", "black", [ "v0" ] ],
+    [ "joy1:HORZ", "uno:A0", "blue", [ "v0" ] ],
+    [ "joy1:VERT", "uno:A1", "purple", [ "v0" ] ],
+    [ "joy1:SEL", "uno:2", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
