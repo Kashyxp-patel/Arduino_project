@@ -197,14 +197,6 @@ The system synchronizes all visual, mechanical, and audio outputs across three p
 
 ---
 
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
----
-
 ## Acknowledgments
 
 * [Wokwi Embedded Systems Simulator](https://wokwi.com/)
