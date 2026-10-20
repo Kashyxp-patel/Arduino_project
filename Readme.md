@@ -7,7 +7,6 @@
 [![Language][Cpp-shield]][Cpp-url]
 [![Simulator][Wokwi-shield]][Wokwi-url]
 [![Display][OLED-shield]][OLED-url]
-[![License][License-shield]][License-url]
 
 </div>
 
@@ -201,7 +200,6 @@ The system synchronizes all visual, mechanical, and audio outputs across three p
 
 * [Wokwi Embedded Systems Simulator](https://wokwi.com/)
 * [Adafruit SSD1306 & GFX Display Libraries](https://github.com/adafruit/Adafruit_SSD1306)
-* [Best-README-Template by othneildrew](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -214,8 +212,6 @@ The system synchronizes all visual, mechanical, and audio outputs across three p
 [Wokwi-url]: https://wokwi.com/
 [OLED-shield]: https://img.shields.io/badge/Display-SSD1306_128x64_I2C-blue?style=for-the-badge
 [OLED-url]: https://github.com/adafruit/Adafruit_SSD1306
-[License-shield]: https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge
-[License-url]: https://opensource.org/licenses/MIT
 [Arduino-badge]: https://img.shields.io/badge/Arduino_Uno-00979D?style=flat-square&logo=arduino&logoColor=white
 [Cpp-badge]: https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white
 [Wokwi-badge]: https://img.shields.io/badge/Wokwi_Simulator-00C853?style=flat-square
